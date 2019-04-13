@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <Button android:text="@string/new_list"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/addAList" style="@style/Widget.AppCompat.Button"
+            android:elevation="@android:dimen/app_icon_size" android:background="@android:drawable/alert_dark_frame"
+            android:backgroundTint="@color/colorPrimary" android:backgroundTintMode="add" tools:text="Add a List"
+            android:visibility="visible" android:onClick="onClick"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="296dp" app:layout_constraintHorizontal_bias="0.483"/>
+
+    <Button android:text="@string/show_lists"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/showList" style="@style/Widget.AppCompat.Button"
+            android:elevation="@android:dimen/app_icon_size" android:background="@android:drawable/alert_dark_frame"
+            android:backgroundTint="@color/colorPrimary" android:backgroundTintMode="add" tools:text="Show Lists"
+            android:visibility="visible" android:onClick="onClick"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="228dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/addAList"
+            app:layout_constraintVertical_bias="0.0" app:layout_constraintHorizontal_bias="0.483"/>
+
+    <Button android:text="@string/remove_list"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/removeList" style="@style/Widget.AppCompat.Button"
+            android:elevation="@android:dimen/app_icon_size" android:background="@android:drawable/alert_dark_frame"
+            android:backgroundTint="@color/colorPrimary" android:backgroundTintMode="add"
+            tools:text="@string/remove_list"
+            android:visibility="visible" android:onClick="onClick"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            app:layout_constraintBaseline_creator="@android:integer/config_longAnimTime" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="164dp"
+            app:layout_constraintHorizontal_bias="0.483" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/showList" app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+            android:text="Shopping List App"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:id="@+id/shoppingList"
+            android:layout_marginBottom="288dp" app:layout_constraintBottom_toTopOf="@+id/addAList"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.44" app:layout_constraintVertical_bias="1.0"
+            tools:text="Shopping List App" android:textAppearance="@style/TextAppearance.AppCompat"
+            android:visibility="visible"/>
+
+</android.support.constraint.ConstraintLayout>
